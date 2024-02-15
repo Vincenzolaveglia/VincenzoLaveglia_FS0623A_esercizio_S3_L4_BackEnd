@@ -1,69 +1,36 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Templates/BaseTemplate.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Concessionaria.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Concessionaria.Index" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
-    <form runat="server">
-        <div class="container">
-            <h2>Acquista l'auto dei tuoi sogni</h2>
-            <asp:DropDownList ID="carModels" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCarModels_SelectedIndexChanged" CssClass="mb-3">
-                <asp:ListItem Text="Seleziona..." Value="0"></asp:ListItem>
-                <asp:ListItem Text="Ferrari F8 Tributo" Value="1"></asp:ListItem>
-                <asp:ListItem Text="Lamborghini Huracan" Value="2"></asp:ListItem>
-                <asp:ListItem Text="Bugatti Chiron" Value="3"></asp:ListItem>
-                <asp:ListItem Text="AlfaRomeo Tonale" Value="4"></asp:ListItem>
-            </asp:DropDownList>
-            <div class="image-container" id="carImage" runat="server"></div>
+<!DOCTYPE html>
 
-            <h3 class="mt-3">Optional:</h3>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional1" runat="server" Text="Pacchetto di upgrade dell'audio (+€800)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional2" runat="server" Text="Cerchi in lega (+€600)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional3" runat="server" Text="Tetto panoramico(€1200)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional4" runat="server" Text="Sedili riscaldati(+€500)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional5" runat="server" Text="Sensori di parcheggio(+€300)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional6" runat="server" Text="Sistema di illuminazione a LED(+€600)" />
-            </div>
-            <div class="form-check">
-                <asp:CheckBox ID="cbOptional7" runat="server" Text="Sistema di assistenza alla guida(+€1200)" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <h2>Prezzo: <span id="LblTotal" runat="server"></span></h2>
+                <ul id="LstSelectedOptions" runat="server"></ul>
             </div>
 
-
-
-            <h3 class="mt-3">Garanzia: </h3>
-            <asp:DropDownList ID="garanzia" runat="server" CssClass="form-control">
-                <asp:ListItem Text="Seleziona..." Value="null"></asp:ListItem>
-                <asp:ListItem Text="0 anni" Value="0"></asp:ListItem>
-                <asp:ListItem Text="1 anno" Value="1"></asp:ListItem>
-                <asp:ListItem Text="2 anni" Value="2"></asp:ListItem>
-                <asp:ListItem Text="3 anni" Value="3"></asp:ListItem>
-                <asp:ListItem Text="4 anni" Value="4"></asp:ListItem>
-                <asp:ListItem Text="5 anni" Value="5"></asp:ListItem>
+            <asp:DropDownList ID="DrpWarranty" runat="server" AutoPostBack="True">
+                <asp:ListItem ID="Year1" Value="1" Text="1 anno"></asp:ListItem>
+                <asp:ListItem ID="Year2" Value="2" Text="2 anni"></asp:ListItem>
+                <asp:ListItem ID="Year3" Value="3" Text="3 anni"></asp:ListItem>
             </asp:DropDownList>
 
-            <br />
-            <asp:Button ID="btnCalcolaPreventivo" runat="server" Text="Calcola Preventivo" OnClick="btnCalcolaPreventivo_Click" class="btn btn-primary" />
+            <asp:CheckBoxList ID="LstOptions" runat="server" AutoPostBack="True">
+                <asp:ListItem ID="Option1" Value="100" Text="Option 1"></asp:ListItem>
+                <asp:ListItem ID="Option2" Value="100" Text="Option 2"></asp:ListItem>
+                <asp:ListItem ID="Option3" Value="200" Text="Option 3"></asp:ListItem>
+                <asp:ListItem ID="Option4" Value="300" Text="Option 4"></asp:ListItem>
+            </asp:CheckBoxList>
 
-        </div>
-        <div class="container">
-            <div class="text-center mt-3 mb-3">
-                <asp:Label ID="lblPreventivo" runat="server"></asp:Label><br />
-                <div class="image-container" id="carImagePreventivo" runat="server"></div>
-                <div class="row justify-content-center">
-                    <asp:Label ID="lblPrezzoBase" runat="server" CssClass="d-block text-left"></asp:Label>
-                    <asp:Label ID="lblPrezzoOptional" runat="server" CssClass="d-block text-left"></asp:Label>
-                    <asp:Label ID="lblPrezzoGaranzia" runat="server" CssClass="d-block text-left"></asp:Label>
-                    <asp:Label ID="lblPrezzoTotale" runat="server" CssClass="d-block text-left"></asp:Label>
-                </div>
-            </div>
+            <asp:DropDownList ID="DrpCars" runat="server" AutoPostBack="True"></asp:DropDownList>
+            <img id="ImgCar" runat="server" width="150" />
         </div>
     </form>
-</asp:Content>
+</body>
+</html>

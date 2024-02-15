@@ -15,156 +15,129 @@ namespace Concessionaria
     {
 
         /// <summary>
-        /// Controllo carModels.
+        /// Controllo form1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList carModels;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controllo carImage.
+        /// Controllo LblTotal.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl carImage;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LblTotal;
 
         /// <summary>
-        /// Controllo cbOptional1.
+        /// Controllo LstSelectedOptions.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LstSelectedOptions;
 
         /// <summary>
-        /// Controllo cbOptional2.
+        /// Controllo DrpWarranty.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional2;
+        protected global::System.Web.UI.WebControls.DropDownList DrpWarranty;
 
         /// <summary>
-        /// Controllo cbOptional3.
+        /// Controllo Year1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional3;
+        protected global::System.Web.UI.WebControls.ListItem Year1;
 
         /// <summary>
-        /// Controllo cbOptional4.
+        /// Controllo Year2.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional4;
+        protected global::System.Web.UI.WebControls.ListItem Year2;
 
         /// <summary>
-        /// Controllo cbOptional5.
+        /// Controllo Year3.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional5;
+        protected global::System.Web.UI.WebControls.ListItem Year3;
 
         /// <summary>
-        /// Controllo cbOptional6.
+        /// Controllo LstOptions.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional6;
+        protected global::System.Web.UI.WebControls.CheckBoxList LstOptions;
 
         /// <summary>
-        /// Controllo cbOptional7.
+        /// Controllo Option1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbOptional7;
+        protected global::System.Web.UI.WebControls.ListItem Option1;
 
         /// <summary>
-        /// Controllo garanzia.
+        /// Controllo Option2.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList garanzia;
+        protected global::System.Web.UI.WebControls.ListItem Option2;
 
         /// <summary>
-        /// Controllo btnCalcolaPreventivo.
+        /// Controllo Option3.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCalcolaPreventivo;
+        protected global::System.Web.UI.WebControls.ListItem Option3;
 
         /// <summary>
-        /// Controllo lblPreventivo.
+        /// Controllo Option4.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPreventivo;
+        protected global::System.Web.UI.WebControls.ListItem Option4;
 
         /// <summary>
-        /// Controllo carImagePreventivo.
+        /// Controllo DrpCars.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl carImagePreventivo;
+        protected global::System.Web.UI.WebControls.DropDownList DrpCars;
 
         /// <summary>
-        /// Controllo lblPrezzoBase.
+        /// Controllo ImgCar.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrezzoBase;
-
-        /// <summary>
-        /// Controllo lblPrezzoOptional.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrezzoOptional;
-
-        /// <summary>
-        /// Controllo lblPrezzoGaranzia.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrezzoGaranzia;
-
-        /// <summary>
-        /// Controllo lblPrezzoTotale.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrezzoTotale;
+        protected global::System.Web.UI.HtmlControls.HtmlImage ImgCar;
     }
 }
